@@ -1,0 +1,69 @@
+img{
+    border:none;
+}
+a{
+    color:#00549D;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+.clear:after{ 
+    content:".";
+    display:block; 
+    height:0; 
+    visibility:hidden; 
+    clear:both;
+}
+.clear{
+    zoom:1; 
+    clear:both;
+}
+#thumbs{
+    display:block;
+}
+#selectFileBtn{
+    width:108px;
+    height:28px;
+    float:left;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(../img/attach.jpg) no-repeat;
+}
+#selectFileBtn:hover{
+    background-position:left -45px;
+}
+#attachList{
+    width:510px;
+    padding-top:5px;
+}
+.attachItem{
+    width:150px;
+    height:20px;
+    float:left;
+    padding:5px;
+    margin-right:10px;
+    margin-bottom:5px;
+    background:#eff16c;
+}
+.attachItem .left{
+    float:left;
+    display:inline;
+    width:8em;/*保证文字不会被半汉字截断,显示8个文字*/  
+    overflow:hidden;/*超出长度的文字隐藏*/  
+    text-overflow:ellipsis;/*文字隐藏以后添加省略号*/  
+    white-space:nowrap;/*强制不换行*/  
+}
+.attachItem .right{
+    float:right;
+    display:inline;
+    margin-top: 3px;
+}
+.attachItem .right a{
+    display:block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(../img/delete.png) no-repeat;
+}
